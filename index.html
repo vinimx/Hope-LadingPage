@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hope</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        fundo: '#401F3E',
+                        primaria: '#7A2F56', 
+                        secundaria: '#A8374F',
+                        detalhe: '#E65B4A',
+                        cor_fonte: '#F3EAE8',
+                    },
+                    fontFamily: {
+                        poppins: ['Poppins', 'sans-serif'],
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 1s ease-in',
+                        'slide-up': 'slideUp 0.5s ease-out',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(20px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' },
+                        },
+                    },
+                },
+            },
+            plugins: [],
+        }
+    </script>
+</head>
+
+<body class="bg-fundo font-poppins">
+    <header class="fixed w-full z-50 bg-fundo/80 backdrop-blur-sm">
+        <nav class="bg-transparent border-b border-detalhe/20">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <span class="uppercase self-center text-2xl text-cor_fonte font-bold whitespace-nowrap tracking-wider hover:text-detalhe transition-colors duration-300">Hope</span>
+                </a>
+                <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-cor_fonte rounded-lg md:hidden hover:bg-secundaria focus:outline-none focus:ring-2 focus:ring-secundaria transition-colors duration-300" aria-controls="navbar-dropdown" aria-expanded="false">
+                    <svg class="w-10 h-10" aria-hidden="true" xmlns="http://www.w3.org/2000" fill="none" viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                    </svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+                    <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-secundaria rounded-lg bg-fundo/90 backdrop-blur-sm md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent">
+                        <li>
+                            <a href="#" class="block py-2 px-3 text-cor_fonte bg-primaria rounded-sm md:bg-transparent md:text-cor_fonte md:p-0 hover:text-detalhe transition-colors duration-300" aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block py-2 px-3 text-cor_fonte rounded-sm hover:bg-secundaria md:hover:bg-transparent md:border-0 md:hover:text-detalhe md:p-0 transition-colors duration-300">Produtos</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block py-2 px-3 text-cor_fonte rounded-sm hover:bg-secundaria md:hover:bg-transparent md:border-0 md:hover:text-detalhe md:p-0 transition-colors duration-300">Sobre Nós</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block py-2 px-3 text-cor_fonte rounded-sm hover:bg-secundaria md:hover:bg-transparent md:border-0 md:hover:text-detalhe md:p-0 transition-colors duration-300">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="min-h-screen flex justify-center items-center text-center text-cor_fonte flex-col bg-gradient-to-br from-secundaria via-detalhe to-primaria p-20 rounded-bl-3xl relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0wIDBoNjB2NjBIMHoiLz48cGF0aCBkPSJNMzYuMzQ0IDQ1LjI0N2MtLjM0Ny0uMzQ3LS41Mi0uNzgxLS41Mi0xLjMwMXYtNy4wMDRjMC0uNTIuMTczLS45NTQuNTItMS4zMDFhMS43NzcgMS43NzcgMCAwIDEgMi41OTYgMGwuMDAyLjAwMmMuMzQ3LjM0Ny41Mi43ODEuNTIgMS4zMDF2Ny4wMDRjMCAuNTItLjE3My45NTQtLjUyIDEuMzAxYTEuNzc3IDEuNzc3IDAgMCAxLTIuNTk2IDB6IiBmaWxsPSIjRkZGIiBmaWxsLW9wYWNpdHk9Ii4xIi8+PC9nPjwvc3ZnPg==')] opacity-10"></div>
+        <h1 class="text-5xl md:text-7xl font-bold uppercase tracking-wider animate-fade-in">Hope</h1>
+        <p class="text-xl md:text-2xl mt-8 max-w-3xl mx-auto leading-relaxed animate-slide-up">
+            Hope é um projeto social que transforma vidas por meio da educação, inclusão e ações solidárias.
+        </p>
+        <div class="mt-12 flex flex-col sm:flex-row gap-6 justify-center animate-slide-up">
+            <a href="#" class="bg-detalhe text-white px-8 py-4 rounded-full font-medium hover:bg-secundaria transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">Projetos</a>
+            <a href="#" class="border-2 border-cor_fonte text-cor_fonte px-8 py-4 rounded-full font-medium hover:bg-cor_fonte hover:text-secundaria transition-all duration-300 transform hover:scale-105">Contato</a>
+        </div>
+    </section>
+
+    <section class="relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-fundo to-primaria opacity-10"></div>
+        <h2 class="text-center text-4xl md:text-5xl text-cor_fonte font-semibold mt-8 mb-16">Feito para ajudar ONGs e instituições filantrópicas</h2>
+        <div class="bg-fundo py-28 sm:py-32 relative">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8">
+              <dl class="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
+                <div class="mx-auto flex max-w-xs flex-col gap-y-4 transform hover:scale-105 transition-transform duration-300">
+                  <dt class="text-xl text-cor_fonte font-medium">Doações nos últimos 2 meses</dt>
+                  <dd class="order-first text-4xl font-bold tracking-tight text-detalhe sm:text-6xl">10 mil</dd>
+                </div>
+                <div class="mx-auto flex max-w-xs flex-col gap-y-4 transform hover:scale-105 transition-transform duration-300">
+                  <dt class="text-xl text-cor_fonte font-medium">Total arrecadados</dt>
+                  <dd class="order-first text-4xl font-bold tracking-tight text-detalhe sm:text-6xl">R$50 milhões</dd>
+                </div>
+                <div class="mx-auto flex max-w-xs flex-col gap-y-4 transform hover:scale-105 transition-transform duration-300">
+                  <dt class="text-xl text-cor_fonte font-medium">Apoiadores</dt>
+                  <dd class="order-first text-4xl font-bold tracking-tight text-detalhe sm:text-6xl">25.000</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+    </section>
+    <section class="bg-cor_fonte py-16 relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0wIDBoNjB2NjBIMHoiLz48cGF0aCBkPSJNMzYuMzQ0IDQ1LjI0N2MtLjM0Ny0uMzQ3LS41Mi0uNzgxLS41Mi0xLjMwMXYtNy4wMDRjMC0uNTIuMTczLS45NTQuNTItMS4zMDFhMS43NzcgMS43NzcgMCAwIDEgMi41OTYgMGwuMDAyLjAwMmMuMzQ3LjM0Ny41Mi43ODEuNTIgMS4zMDF2Ny4wMDRjMCAuNTItLjE3My45NTQtLjUyIDEuMzAxYTEuNzc3IDEuNzc3IDAgMCAxLTIuNTk2IDB6IiBmaWxsPSIjN0EyRjU2IiBmaWxsLW9wYWNpdHk9Ii4xIi8+PC9nPjwvc3ZnPg==')] opacity-5"></div>
+        <h3 class="p-5 mb-12 text-center text-4xl text-secundaria font-semibold">Faça sua doação</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-9 max-w-6xl mx-auto px-4">
+            <div class="p-8 bg-primaria text-cor_fonte text-center rounded-2xl shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
+                <h4 class="text-2xl font-semibold mb-4">Doação Essencial</h4>
+                <p class="mt-4 text-lg mb-8">Ajude a garantir o básico para quem mais precisa.</p>
+                <div class="text-5xl font-bold my-10 text-detalhe">R$25</div>
+                <a href="#" class="bg-detalhe text-cor_fonte px-8 py-3 rounded-full font-medium hover:bg-secundaria transition-all duration-300 transform hover:scale-105 inline-block">Doar agora</a>
+            </div>
+            <div class="p-8 bg-secundaria text-cor_fonte text-center rounded-2xl shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
+                <h4 class="text-2xl font-semibold mb-4">Doação Impacto</h4>
+                <p class="mt-4 text-lg mb-8">Contribua para ampliar projetos sociais e educacionais.</p>
+                <div class="text-5xl font-bold my-10 text-detalhe">R$50</div>
+                <a href="#" class="bg-detalhe text-cor_fonte px-8 py-3 rounded-full font-medium hover:bg-primaria transition-all duration-300 transform hover:scale-105 inline-block">Doar agora</a>
+            </div>
+            <div class="p-8 bg-detalhe text-cor_fonte text-center rounded-2xl shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300">
+                <h4 class="text-2xl font-semibold mb-4">Doação Transformadora</h4>
+                <p class="mt-4 text-lg mb-8">Seja um agente de mudança e transforme vidas.</p>
+                <div class="text-5xl font-bold my-10 text-primaria">R$100</div>
+                <a href="#" class="bg-secundaria text-cor_fonte px-8 py-3 rounded-full font-medium hover:bg-primaria transition-all duration-300 transform hover:scale-105 inline-block">Doar agora</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-primaria text-cor_fonte p-12 rounded-t-3xl shadow-xl mt-12 relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0wIDBoNjB2NjBIMHoiLz48cGF0aCBkPSJNMzYuMzQ0IDQ1LjI0N2MtLjM0Ny0uMzQ3LS41Mi0uNzgxLS41Mi0xLjMwMXYtNy4wMDRjMC0uNTIuMTczLS45NTQuNTItMS4zMDFhMS43NzcgMS43NzcgMCAwIDEgMi41OTYgMGwuMDAyLjAwMmMuMzQ3LjM0Ny41Mi43ODEuNTIgMS4zMDF2Ny4wMDRjMCAuNTItLjE3My45NTQtLjUyIDEuMzAxYTEuNzc3IDEuNzc3IDAgMCAxLTIuNTk2IDB6IiBmaWxsPSIjRkZGIiBmaWxsLW9wYWNpdHk9Ii4xIi8+PC9nPjwvc3ZnPg==')] opacity-5"></div>
+        <div class="w-full mx-auto max-w-screen-xl flex flex-col md:flex-row items-center justify-between relative">
+            <div class="mb-6 md:mb-0">
+                <span class="text-2xl font-bold uppercase tracking-wider">Hope</span>
+                <p class="text-sm mt-2 opacity-80">© 2024 HOPE. Todos os direitos reservados.</p>
+            </div>
+            <ul class="flex flex-wrap items-center justify-center gap-6 text-sm font-medium">
+                <li>
+                    <a href="#" class="hover:text-detalhe transition-colors duration-300">Sobre Nós</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:text-detalhe transition-colors duration-300">Política de Privacidade</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:text-detalhe transition-colors duration-300">Termos de Uso</a>
+                </li>
+                <li>
+                    <a href="#" class="hover:text-detalhe transition-colors duration-300">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const button = document.querySelector('[data-collapse-toggle="navbar-dropdown"]');
+            const menu = document.getElementById('navbar-dropdown');
+    
+            button.addEventListener('click', function () {
+                menu.classList.toggle('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
